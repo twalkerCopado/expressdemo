@@ -1,0 +1,102 @@
+# Excluded Managed Package Metadata
+# Still allows customization, but doesn't track unchangeable files
+# Add all installed managed packages to this list
+
+# Excluded Managed Packages - non editable components
+
+# Wildcard for All Managed Packages: If you want to exclude all managed packages
+# regardless of their namespace, you can use a wildcard pattern that matches any file
+# containing two underscores, which is a common convention for namespaced components
+# in Salesforce:
+#*__*
+#Example: (replace the following examples with the Namespace Prefix in the Production Org)
+*trailheadapp__*
+*sf_com_apps__*
+
+# the following are needed if Copado is installed in the Production Org and not in a Governance Org
+# Copado Deployer base package
+copado__*.cls
+copado__*.cls-meta.xml
+copado__*.trigger
+copado__*.trigger-meta.xml
+copado__*.page
+copado__*.page-meta.xml
+
+# Copado CICD for Source Format Pipelines
+cmcSf__*.cls
+cmcSf__*.cls-meta.xml
+cmcSf__*.trigger
+cmcSf__*.trigger-meta.xml
+cmcSf__*.page
+cmcSf__*.page-meta.xml
+
+# Copado Quality Integration Framework
+copadoQuality__*.cls
+copadoQuality__*.cls-meta.xml
+copadoQuality__*.trigger
+copadoQuality__*.trigger-meta.xml
+copadoQuality__*.page
+copadoQuality__*.page-meta.xml
+
+# Excluded Metadata Types - Performance / Data-like
+*.document
+*.document-meta.xml
+*.installedPackage
+*.installedPackage-meta.xml
+*.staticresource
+*.staticresource-meta.xml
+
+
+# Excluded Metadata Types - Security
+*.authprovider-meta.xml
+*.samlssoconfig-meta.xml
+
+# Excluded Metadata Types - Obsolete as of API v44
+*.flowdefinition-meta.xml
+
+
+# Default SFDX - Dreamhouse .gitignore content
+
+# Salesforce dev
+.sfdx/
+.localdevserver/
+
+# LWC VSCode autocomplete
+jsconfig.json
+
+# LWC Jest coverage reports
+coverage/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+
+# Eslint cache
+.eslintcache
+
+# MacOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# VS Code project settings
+.vscode/*
+!.vscode/extensions.json
+.pmdCache
+/scan_results.csv
+/quickstart.sh
+
+# Other
+.sf/
+.copado/
+.config
