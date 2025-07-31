@@ -16,6 +16,9 @@
         <layout>CCM_Object__c-CCM Object Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Simplot_1__c-Simplot 1 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Student__c-Student Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -34,6 +37,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>CCM_Object__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Simplot_1__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
