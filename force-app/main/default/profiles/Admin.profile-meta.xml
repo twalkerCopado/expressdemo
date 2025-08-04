@@ -9,6 +9,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Companion__c.Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Dynatrace__c.Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -19,6 +24,9 @@
     </fieldPermissions>
     <layoutAssignments>
         <layout>CCM_Object__c-CCM Object Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Companion__c-Companion Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Dynatrace__c-Dynatrace Layout</layout>
@@ -45,6 +53,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>CCM_Object__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Companion__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
