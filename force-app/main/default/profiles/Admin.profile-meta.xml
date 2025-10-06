@@ -14,6 +14,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Freshworks__c.Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Signify__c.Account__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -32,6 +37,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Dynatrace__c-Dynatrace Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Freshworks__c-Freshworks Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Signify__c-Signify Layout</layout>
@@ -75,6 +83,15 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
+        <object>Freshworks__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
         <object>Signify__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
@@ -106,6 +123,10 @@
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <userLicense>Salesforce</userLicense>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>AccessOrchestrationObjects</name>
+    </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
         <name>ActivateContract</name>
@@ -697,6 +718,10 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>PublishPackaging</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>QrCodeGeneratorMobilePublisherPlayground</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
