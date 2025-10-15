@@ -18,3 +18,5 @@
 **/lwc/**
 # Exclude all Layouts
 # **/layouts/*.layout-meta.xml
+# Exclude all Flexipages
+**/flexipages/**
