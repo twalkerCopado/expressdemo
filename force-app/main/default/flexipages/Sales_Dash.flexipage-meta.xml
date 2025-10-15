@@ -33,25 +33,8 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentInstanceProperties>
-                    <name>tabs</name>
-                    <valueList>
-                        <valueListItems>
-                            <value>standard-Account</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>standard-Lead</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>standard-Opportunity</value>
-                        </valueListItems>
-                    </valueList>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>title</name>
-                </componentInstanceProperties>
-                <componentName>runtime_mobilesapp:launchPadTileList</componentName>
-                <identifier>runtime_mobilesapp_launchPadTileList</identifier>
+                <componentName>force:detailPanel</componentName>
+                <identifier>force_detailPanel</identifier>
             </componentInstance>
         </itemInstances>
         <name>main</name>
