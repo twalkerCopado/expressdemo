@@ -29,6 +29,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Fresenius__c.Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Freshworks__c.Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -61,6 +66,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Dynatrace__c-Dynatrace Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Fresenius__c-Fresenius Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Freshworks__c-Freshworks Layout</layout>
@@ -129,6 +137,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>Dynatrace__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Fresenius__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
