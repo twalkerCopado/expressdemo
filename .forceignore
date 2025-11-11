@@ -38,3 +38,6 @@ package.xml
 #**/installedPackages/**
 #**/dashboards/**
 #**/reports/**
+**/tsconfig.json
+
+**/*.ts
