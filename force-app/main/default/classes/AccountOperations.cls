@@ -10,13 +10,13 @@ public class AccountOperations {
     public static Account setDefaultBillingAddress(Account a){//DEV 1
         a.billingstreet = '123 Masuri'; // DEV 2 updates 
         a.billingstate = 'Spain';
-        a.billingpostalcode ='11111'; // DEV 2 updates
+        a.billingpostalcode ='76044'; // DEV 2 updates
         return a;
     }
     public static Account setDefaultShippingAddress(Account a){//DEV 1
         a.shippingstreet = '123 Masuri'; // DEV 2 updates 
         a.shippingstate = 'Spain';
-        a.shippingpostalcode ='11111'; // DEV 2 updates
+        a.shippingpostalcode ='76044'; // DEV 2 updates
         return a;
     }
     public static Account setDefaultPhone(Account a) {//DEV 1
