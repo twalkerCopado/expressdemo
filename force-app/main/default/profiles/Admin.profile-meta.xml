@@ -18,6 +18,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Experian_CPQ__c.Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Keybank__c.Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -31,6 +36,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>ECI_Solution__c-ECI Solution Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Experian_CPQ__c-Experian CPQ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Keybank__c-Keybank Layout</layout>
@@ -63,6 +71,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>ECI_Solution__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Experian_CPQ__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
