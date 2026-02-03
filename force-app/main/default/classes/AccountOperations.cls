@@ -14,13 +14,13 @@ public class AccountOperations {
         return a;
     }
     public static Account setDefaultShippingAddress(Account a){//DEV 1
-        a.shippingstreet = '535 Mission Street'; // DEV 2 updates 
+        a.shippingstreet = '123 Masuri'; // DEV 3 updates 
         a.shippingstate = 'California';
         a.shippingpostalcode ='94105'; // DEV 2 updates
         return a;
     }
     public static Account setDefaultPhone(Account a) {//DEV 1
-        a.Phone='666777888'; // DEV 2 updates
+        a.Phone='9723444090'; // DEV 2 updates
         return a;
     }
     public static Account setDefaultURL(Account a) { //DEV 1
