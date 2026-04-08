@@ -1,21 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionCalls>
-        <name>New_Lead</name>
-        <label>New Lead</label>
+        <name>Send_New_Email</name>
+        <label>Send New Email</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
-        <actionName>copado__Deployment__c.copado__Deployment_Completed_email_alert</actionName>
-        <actionType>emailAlert</actionType>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
-            <name>SObjectRowId</name>
+            <name>recipientAddresses</name>
             <value>
-                <elementReference>$Record.CreatedById</elementReference>
+                <collectionElements>
+                    <elementReference>$Record.Email</elementReference>
+                </collectionElements>
             </value>
         </inputParameters>
-        <nameSegment>copado__Deployment__c.copado__Deployment_Completed_email_alert</nameSegment>
+        <inputParameters>
+            <name>composeEmailContent</name>
+            <value>
+                <stringValue>True</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Welcome to Copado!</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <inputConfiguratorMode>Custom</inputConfiguratorMode>
+                <stringValue>&lt;p&gt;Hi {!$Record.FirstName},&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Thank you for your interest in [Your Company]!&amp;nbsp;&lt;/p&gt;&lt;p&gt;We&apos;re excited to connect with you.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;A member of our team will reach out to you shortly.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Best regards,&lt;/p&gt;&lt;p&gt;Copado Team&lt;/p&gt;</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
         <offset>0</offset>
+        <versionString>2.0.1</versionString>
     </actionCalls>
     <apiVersion>66.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
@@ -45,7 +67,7 @@
         <locationX>0</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>New_Lead</targetReference>
+            <targetReference>Send_New_Email</targetReference>
         </connector>
         <object>Lead</object>
         <recordTriggerType>Create</recordTriggerType>
